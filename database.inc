@@ -22,10 +22,10 @@
  */
 
 //Supported database connection methods
-$backends = array('mdb2', 'pdo', 'php'); //PHP is mysql, sqlite only
+$db_backends = array('mdb2', 'pdo', 'php'); //PHP is mysql, sqlite only
 
 //Supported database type drivers
-$drivers = array('mysqli', 'mysql', 'mssql', 'sqlite');
+$db_drivers = array('mysqli', 'mysql', 'mssql', 'sqlite');
 
 //Set the required defines
 require_once 'static.inc';
@@ -35,3 +35,7 @@ require_once(DATABASE_LAYER_PATH.DS.'backends'.DS.'database_execution.inc');
 
 //Load the main database API
 require_once(DATABASE_LAYER_PATH.DS.'layer.inc');
+
+//Clean up
+unset($db_backends);
+unset($db_drivers);

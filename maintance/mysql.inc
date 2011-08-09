@@ -1,6 +1,5 @@
 <?php
 
-
 class database_maintenance_mysql extends database_maintenance
 {
 	/**

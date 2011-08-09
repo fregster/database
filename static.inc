@@ -8,11 +8,11 @@ if(!defined('DS'))
 }
 
 //Set the database driver, if it's not set load it from the array of avaiable drivers
-if(!isset($GLOBALS['database_driver'])) { $GLOBALS['database_driver'] = $drivers[0]; }
+if(!isset($GLOBALS['database_driver'])) { $GLOBALS['database_driver'] = $db_drivers[0]; }
 define('DATABASE_DRIVER', $GLOBALS['database_driver']);
 
 //Set the database backend, if it's not set load it from the array of avaiable backends
-if(!isset($GLOBALS['database_backend'])) { $GLOBALS['database_backend'] = $backends[0]; }
+if(!isset($GLOBALS['database_backend'])) { $GLOBALS['database_backend'] = $db_backends[0]; }
 define('DATABASE_BACKEND' , $GLOBALS['database_backend']);
 
 //Set the database table prefic, if it's not set load it blank
